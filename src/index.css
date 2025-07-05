@@ -26,8 +26,6 @@ html, body {
   color: #f8f9fa !important;
 }
 
-
-
 .dark-mode .gradient-background {
   background: #121212 !important; /* Solid dark, kills gradient */
 }
