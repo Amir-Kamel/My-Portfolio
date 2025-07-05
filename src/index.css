@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.gradient-background {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #111, #ffd99b, #ebfab7, #d4fdf4);
+  background-size: 100% 400%;
+  animation: none;
+  transition: background-position 1s ease;
+}
+
+
+/* index.css or app.css */
+
+.card-light {
+  background-color: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+.card-dark {
+  background-color: #1f1f1f !important;
+  color: #f8f9fa !important;
+}
+
+
+
+.dark-mode .gradient-background {
+  background: #121212 !important; /* Solid dark, kills gradient */
+}
+
+.dark-mode {
+  color: #fff !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li,
+.dark-mode a,
+.dark-mode span,
+.dark-mode label {
+  color: #fff !important;
+}
+
+
