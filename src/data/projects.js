@@ -43,6 +43,15 @@ const projectData = [
     github: "https://github.com/Amir-Kamel/MovieApp_React"
   },
   {
+    title: "Hospital Management System – Odoo",
+    image: hospital,
+    description: [
+      "Hospital system using Odoo 18 to manage patients, doctors, records, and reports.",
+      "Includes relations between patient and doctor with visit history."
+    ],
+    github: "https://github.com/Amir-Kamel/Hospital_Managment_System_Odoo"
+  },
+  {
     title: "CST Bookstore – Client-Side Tech (JS/Bootstrap)",
     image: cst,
     description: [
@@ -101,15 +110,6 @@ const projectData = [
     ],
     live: "https://e-commerce-django-postgresql.onrender.com/",
     github: "https://github.com/Amir-Kamel/E-commerce-Django-PostgreSQL"
-  },
-  {
-    title: "Hospital Management System – Odoo",
-    image: hospital,
-    description: [
-      "Hospital system using Odoo 18 to manage patients, doctors, records, and reports.",
-      "Includes relations between patient and doctor with visit history."
-    ],
-    github: "https://github.com/Amir-Kamel/Hospital_Managment_System_Odoo"
   }
 ];
 
