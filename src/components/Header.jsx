@@ -11,9 +11,18 @@ const Header = ({ toggleDarkMode, darkMode }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="container">
-        <a className="navbar-brand fw-bold fs-4" href="#">
-          Amir Kamel
-        </a>
+        <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="navbar-brand fw-bold fs-4"
+            style={{ cursor: 'pointer' }}
+          >
+            Amir Kamel
+          </Link>
+
+        {/* Hamburger toggler */}
         <button
           className="navbar-toggler"
           type="button"
@@ -25,17 +34,19 @@ const Header = ({ toggleDarkMode, darkMode }) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
+        {/* 🌙 Dark Mode button for mobile (only shows on small screens) */}
+        <button
+          className="btn btn-sm btn-warning d-lg-none ms-2"
+          onClick={toggleDarkMode}
+        >
+          {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+        </button>
+
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link
-                to="hero"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="nav-link"
-                style={{ cursor: 'pointer' }}
-              >
+              <Link to="hero" spy={true} smooth={true} duration={500} className="nav-link" style={{ cursor: 'pointer' }}>
                 Home
               </Link>
             </li>
@@ -55,16 +66,15 @@ const Header = ({ toggleDarkMode, darkMode }) => {
               </Link>
             </li>
           </ul>
-
-
-          <button
-            className="btn btn-sm btn-warning ms-3"
-            onClick={toggleDarkMode}
-          >
-            {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-          </button>
-
         </div>
+
+        {/* 🌙 Dark Mode button for desktop (only shows on large screens) */}
+        <button
+          className="btn btn-sm btn-warning d-none d-lg-block ms-3"
+          onClick={toggleDarkMode}
+        >
+          {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+        </button>
       </div>
     </motion.nav>
   );

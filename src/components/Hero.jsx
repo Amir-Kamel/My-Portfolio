@@ -3,6 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
+import { FaDownload } from 'react-icons/fa';
+
 
 const Hero = () => {
   return (
@@ -35,16 +37,15 @@ const Hero = () => {
         </p>
 
         {/* Call to action button scrolls to projects section */}
-        <ScrollLink
-          to="projects"
-          smooth={true}
-          duration={700}
+       <a
+          href="/Amir Kamel Kamal_Resume.pdf"
+          download
           className="btn btn-warning btn-lg mb-4"
-          style={{ cursor: 'pointer' }}
-          aria-label="View Projects"
+          aria-label="Download Resume"
         >
-          View Projects
-        </ScrollLink>
+          Download My Resume <FaDownload />
+        </a>
+
 
         {/* Social icons */}
         <div className="d-flex justify-content-center gap-4 fs-4">

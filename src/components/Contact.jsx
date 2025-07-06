@@ -57,19 +57,19 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <div className="mb-3">
                 <label htmlFor="title" className="form-label">Subject</label>
-                <input type="text" className="form-control" id="title" name="title" required />
+                <input type="text" className="form-control" id="title" name="title" placeholder='e.g. Job Opportunity, Collaboration, Feedback' required />
               </div>
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">Name</label>
-                <input type="text" className="form-control" id="name" name="name" required />
+                <label htmlFor="name" className="form-label">Your Name</label>
+                <input type="text" className="form-control" id="name" name="name" placeholder="Enter your full name" required />
               </div>
               <div className="mb-3">
-                <label htmlFor="email" className="form-label">Email</label>
-                <input type="email" className="form-control" id="email" name="email" required />
+                <label htmlFor="email" className="form-label">Your Email</label>
+                <input type="email" className="form-control" id="email" name="email" placeholder="you@example.com" required />
               </div>
               <div className="mb-3">
                 <label htmlFor="message" className="form-label">Message</label>
-                <textarea className="form-control" id="message" name="message" rows="5" required></textarea>
+                <textarea className="form-control" id="message" name="message" rows="5"  placeholder="Type your message here..." required></textarea>
               </div>
               <button
                 type="submit"

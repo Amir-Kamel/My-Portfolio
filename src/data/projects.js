@@ -4,6 +4,9 @@ import cst from '../assets/cst.png';
 import warehouse from '../assets/warehouse.png';
 import movie from '../assets/movie.png';
 import hospital from '../assets/hospital.png';
+import ecommerceReact from '../assets/ecommerceReact.png';
+import staticGenerators from '../assets/staticGenerators.png';
+import ecommerceDjango from '../assets/ecommerceDjango.png';
 
 const projectData = [
   {
@@ -15,7 +18,7 @@ const projectData = [
       "Responsive frontend built using React and Bootstrap."
     ],
     live: "https://hotels-reservation-system-ui.vercel.app/",
-    github: "https://github.com/Amir-Kamel/Hotels_Reservation_System_UI"
+    github: "https://github.com/Amir-Kamel/Hotels_Reservation_System_API"
   },
   {
     title: "Supermarkets Warehouse Inventory – Django, PostgreSQL",
@@ -58,6 +61,46 @@ const projectData = [
     ],
     live: "https://book-store-flask-sqlite.onrender.com/",
     github: "https://github.com/Amir-Kamel/Book-Store-Flask-SQLite"
+  },
+    {
+    title: "Book and Author Manager Flask, SQLite",
+    image: book,
+    description: [
+      "Full-featured bookstore website built with Flask and SQLite.",
+      "A simple web app to add books and authors, with each book linked to its respective author."
+    ],
+    live: "https://book-store-flask-sqlite.onrender.com/",
+    github: "https://github.com/Amir-Kamel/Book-Store-Flask-SQLite"
+  },
+  {
+    title: "E-commerce Store React, Redux, API",
+    image: ecommerceReact,
+    description: [
+      "Modern E-commerce website built with React and Redux Toolkit.",
+      "Uses real API data, React Router, and hooks for dynamic product display and cart management."
+    ],
+    live: "https://e-commerce-react-beta-ten.vercel.app/",
+    github: "https://github.com/Amir-Kamel/E-commerce_React"
+  },
+  {
+    title: "Smart Generators Static Website",
+    image: staticGenerators,
+    description: [
+      "Freelance project for Smart Generators Company using HTML, CSS, JavaScript, and Bootstrap.",
+      "Responsive static website showcasing products, services, and contact information."
+    ],
+    live: "https://static-web-pages-freelance-generators-company.vercel.app/",
+    github: "https://github.com/Amir-Kamel/StaticWebPages_Freelance_GeneratorsCompany"
+  },
+  {
+    title: "E-commerce Platform Django, PostgreSQL",
+    image: ecommerceDjango,
+    description: [
+      "Dynamic E-commerce website built with Django and PostgreSQL.",
+      "Supports user auth, product management, shopping cart, and secure transactions with a responsive UI."
+    ],
+    live: "https://e-commerce-django-postgresql.onrender.com/",
+    github: "https://github.com/Amir-Kamel/E-commerce-Django-PostgreSQL"
   },
   {
     title: "Hospital Management System – Odoo",
